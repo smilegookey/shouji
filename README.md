@@ -12,6 +12,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Windows 平台如果遇到 `asyncpg` 编译失败，请确认已安装 Visual Studio Build Tools，或直接使用已切换到的 `psycopg[binary]` 依赖后重试安装。
+
 Windows PowerShell 启动虚拟环境：
 
 ```powershell
