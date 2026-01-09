@@ -90,7 +90,7 @@ async def admin_list_users(
     return [UserPublic.model_validate(user) for user in users]
 
 
-@app.patch(f"{settings.api_prefix}/admin/users/{user_id}", response_model=UserPublic)
+@app.patch(f"{settings.api_prefix}/admin/users/{{user_id}}", response_model=UserPublic)
 async def admin_update_user_status(
     user_id: int,
     payload: UserStatusUpdate,
