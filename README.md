@@ -12,6 +12,22 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Windows PowerShell 启动虚拟环境：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Windows CMD 启动虚拟环境：
+
+```cmd
+python -m venv .venv
+.\.venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+
 2. 配置环境变量
 
 ```bash
